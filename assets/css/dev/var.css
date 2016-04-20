@@ -1,0 +1,11 @@
+:root {
+	/*Color*/
+	--azul: blue;
+	--cinza: grey;
+	--branco: white;
+	/*text*/
+	--ta-c: center;
+	--ta-r: right;
+	--ta-j: justify;
+	--ta-l: left;
+}

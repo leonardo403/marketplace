@@ -1,0 +1,32 @@
+{
+  "name": "marketplace",
+  "version": "1.0.0",
+  "description": "Marketplace controle de loja virtual.",
+  "main": "GruntFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leonardo403/marketplace.git"
+  },
+  "author": "Leonardo Lima",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/leonardo403/marketplace/issues"
+  },
+  "homepage": "https://github.com/leonardo403/marketplace#readme",
+  "dependencies": {
+    "autoprefixer": "^6.3.6",
+    "grunt": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-cssnext": "^1.0.0",
+    "grunt-postcss": "^0.8.0",
+    "postcss-nesting": "^2.3.1"
+  }
+}
