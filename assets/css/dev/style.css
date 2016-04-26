@@ -51,33 +51,138 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* 
+   End	
+	http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-
+img {
+	max-width: 100%;
+}
+a {text-decoration: none;}
 .h1 {color: var(--branco);}
 .contaianer {
 	width: 900px;
 	margin: 0 auto;
 }
-
 header {	
 	width: 80em;
 	height: 8em;
-	top: 0;
-		& .box-h {
+	top: 0;		
+}
+.box-h {
 		width: 15em;
 		height: 5em;		
-		background: var(--azul);
-		margin-left: 30em;
-		& h1 {
-			text-align: var(--ta-c);
-		}				
-		}		
+		background: var(--bg-color-box);
+		margin-left: 32em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+		border-radius: 5px;
 }
-footer {
-	bottom: 0;
-	background: var(--cinza);
+.box-h h1 {
+   text-transform: uppercase;
+   text-align: var(--ta-c);
+   line-height: 5em;
+}
+nav {
+	width: 100%;
+	height: 3em;	
+	background: var(--bg-color-nav);
+}
+nav ul {
+	margin-left: 26em;
+	font-size: 15px;
+}
+nav li {
+	float: left;
+    margin-left: 3%;
+    line-height: 3em;
+    left: 12%;
+    position: relative;	
+}
+nav a {color: var(--branco);cursor: pointer;}
+nav a:hover {color: var(--preto);}
+
+section {
+	height: var(--sec-h);
+	width:100%;
+	position: var(--pos-a);
+	margin-top: 16px;
+	background: #1A75CE;
 }
 
+.orderBox {
+	width: 400px;
+	height: 400px;
+	margin-left: 28em;
+	margin-top: 5em;
+	position: var(--pos-a);
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 2;
+}
+.orderName {	
+	margin-top: -4em;
+	width: 400px;
+	position: var(--pos-a);
+    margin-left: 0%;
+    background: white;
+    opacity: 0.8;
+}
+.orderName p {	
+	margin-left: 7em;
+	line-height: 3em;
+	font-size: 20px;
+}
+.orderImage > img {
+	width: auto;
+	height: auto;
+	position: var(--pos-a);
+}
+.orderDesc {
+	width: auto;
+	margin-top: 17em;
+    margin-left: 7em;
+    position: var(--pos-a);
+	font-size: 15px;	
+}
+.shipping {	
+	margin-left: 25em;
+    margin-top: 2em;
+	position: var(--pos-a);
+	border-radius: 5px;
+	cursor: pointer;
+	z-index: 2;	
+}
+.shippingTable table {
+	width: 600px;
+	height: 400px;
+	background: white;
+	table-layout: auto;
+    border: 1px solid;
+	overflow-y: visible;	
+}
+.shippingTable th {
+	font-size: 15px;
+	font-weight: bold;
+	height: 20px;
+}
+.shippingTable tr {
+	height: 20px;
+}
+.shippingTable tr:nth-child(even) {
+	background: grey;
+}
+
+footer {
+	position: fixed;
+	width: 100%;
+	height: 70px;
+	bottom: 0;
+	background: var(--bg-color-footer);
+}
+footer p {
+	margin-left: 32em;	
+	line-height: 5em;
+}

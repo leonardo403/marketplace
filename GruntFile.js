@@ -32,8 +32,7 @@ module.exports = function(grunt) {
       sourcemap: true,
 
       processors: [
-        require('autoprefixer')({browsers: ['last 2 versions'] }), //add vendor prefixes
-        require('postcss-nesting')({})
+        require('autoprefixer')({browsers: ['last 2 versions'] }) //add vendor prefixes
       ]
     },
     dist: {
@@ -42,23 +41,13 @@ module.exports = function(grunt) {
       }
     }
   }, //cssnext
-  // postcss: {
-  //       options: {
-  //           use: [
-  //               require('postcss-nesting')({})
-  //           ]
-  //       },
-  //       dist: {
-  //           src: 'assets/css/dev/style.css'
-  //       }
-  //   }, //postcss
      watch: {
        dist : {
         files : [
           'assets/js/**/*',
           'assets/css/dev/*'
         ],
-        tasks : [ 'uglify', 'cssnext','postcss']
+        tasks : [ 'uglify', 'cssnext']
       }       
     } // watch    
   };
@@ -70,11 +59,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-cssnext');
-  grunt.loadNpmTasks('grunt-contrib-cssmin');      
-  grunt.loadNpmTasks('grunt-postcss');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // run tasks Default
-  grunt.registerTask('default', ['uglify','cssnext','postcss']);
+  grunt.registerTask('default', ['uglify','cssnext']);
   
   //run task cssmin Production 
   grunt.registerTask('cssmin', ['cssmin']);

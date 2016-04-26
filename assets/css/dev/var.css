@@ -1,11 +1,20 @@
 :root {
 	/*Color*/
-	--azul: blue;
-	--cinza: grey;
+	--bg-color-box: #1A75CE;
+	--bg-color-nav: #195D9E;
+	--bg-color-footer: #F2F2F2;
 	--branco: white;
+	--preto: black;
 	/*text*/
 	--ta-c: center;
 	--ta-r: right;
 	--ta-j: justify;
 	--ta-l: left;
+	/*Position*/
+	--pos-s: static;
+	--pos-a: absolute;
+	--pos-r: relative;
+	--pos-f: fixed;
+	/*section*/
+	--sec-h: 500px; 
 }
